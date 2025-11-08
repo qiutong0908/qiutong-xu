@@ -7,6 +7,8 @@ This repository contains the PyTorch training code developed for the thesis proj
 
 The project aims to train an efficient convolutional neural network (CNN) model to detect and classify Neurofibromas (NF) from medical or dermatological images, and deploy the trained model on a mobile platform for on-device inference.
 
+---
+
 ## Project Overview
 
 - **Objective:**  
@@ -27,6 +29,43 @@ The project aims to train an efficient convolutional neural network (CNN) model 
   - Model export using **TorchScript Lite** for mobile integration.
   - Reproducible training pipeline with configurable hyperparameters.
 
+---
+
 ## Folder Structure
+
+Below is the recommended structure of the project repository:
+
+nf_project/
+├── data/ # dataset (not uploaded; use your own or ISIC/Radiopaedia)
+├── models/ # saved model checkpoints (.pt or .pth)
+├── src/ # main source code
+│ ├── train_nf.py # main training script
+│ ├── dataset.py # data loading and augmentation
+│ ├── model.py # EfficientNet-B0 architecture
+│ ├── loss.py # focal loss function
+│ ├── utils.py # helper functions (metrics, plotting)
+│ └── inference.py # inference/testing on new images
+├── requirements.txt # Python dependencies
+├── README.md
+└── LICENSE
+
+
+---
+
+##  Installation
+
+```bash
+# clone the repo
+git clone https://github.com/qiutong0908/qiutong-xu.git
+cd qiutong-xu
+
+# create virtual environment
+python3 -m venv nf_env
+source nf_env/bin/activate    # (on macOS/Linux)
+# or: .\nf_env\Scripts\activate (on Windows)
+
+# install dependencies
+pip install -r requirements.txt
+
 
 
