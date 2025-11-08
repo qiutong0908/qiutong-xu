@@ -34,7 +34,7 @@ The project aims to train an efficient convolutional neural network (CNN) model 
 ## Folder Structure
 
 Below is the recommended structure of the project repository:
-
+'''
 nf_project/
 ├── data/ # dataset (not uploaded; use your own or ISIC/Radiopaedia)
 ├── models/ # saved model checkpoints (.pt or .pth)
@@ -48,7 +48,7 @@ nf_project/
 ├── requirements.txt # Python dependencies
 ├── README.md
 └── LICENSE
-
+'''
 
 ---
 
